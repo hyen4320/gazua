@@ -12,6 +12,10 @@ def index():
 def index():
     return "3M"
 
+@app.route("/tirano")
+def tirano():
+    return "0078"
+
 @app.route("/login", methods=['GET','POST'])
 def login():
     if request.method == 'POST':
